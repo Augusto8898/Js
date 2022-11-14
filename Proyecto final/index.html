@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <title>Prestamos</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar bg-light">
+      <div class="container-fluid justify-content-center">
+        <a class="navbar-brand " href="./index.html">
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="justify-content-center align-items-center text-center">
+
+    <h1 class="p-4">Simulador de prestamos Augusto Addy</h1>
+
+    <div class="form">
+      <fieldset>
+        <form class="d-flex flex-column">
+          <div class="p-1">
+            <input type="text" class="text-center" placeholder="Capital" id="capital">
+          </div>
+
+          <div class="p-1">
+            <input type="text" class="text-center" placeholder="Cuotas" id="cuota">
+          </div>
+
+          <div class="p-1">
+            <input type="text" class="text-center" placeholder="Interes" id="interes">
+          </div>
+        </form>
+
+        <button type="button" onclick="gen_table()" class="btn btn-primary mt-2">Calcular</button>
+
+      </fieldset>
+      <hr>
+
+      <table class="table tab table-hover p-4">
+        <thead>
+          <tr>
+            <th scope="col">Cuota</th>
+            <th scope="col">Capital</th>
+            <th scope="col">Interes</th>
+            <th scope="col">Importe</th>
+          </tr>
+        </thead>
+        <tbody id="tab">
+          <tr>
+            <td class="ft">TOTAL</td>
+            <td id="t1"></td>
+            <td id="t2"></td>
+            <td id="t3"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <script src="./index.js"></script>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
